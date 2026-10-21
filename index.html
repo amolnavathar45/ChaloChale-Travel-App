@@ -7,10 +7,11 @@
   <title>ChaloChale - Home</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <div class="container" style="border: 1px solid red;">
+  <div class="container home-page">
     <div class="row">
       <div class="col-md-12">
 
@@ -45,7 +46,7 @@
     <div class="row">
       <div class="col-md-12">
         <!-- Carousel Start -->
-        <div id="carouselExampleCaptions" class="carousel slide">
+        <div id="carouselExampleCaptions" class="carousel slide home-carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></button>
@@ -57,7 +58,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="./assets/images/Alpine Lake Chapel at Golden Hour.png" class="d-block w-100" alt="Mountains">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption home-carousel__caption">
                 <h5>Explore Beautiful Mountains</h5>
                 <p>Plan your next vacation with ChaloChale.</p>
                 <button class="btn btn-primary">Explore Now</button>
@@ -65,7 +66,7 @@
             </div>
             <div class="carousel-item">
               <img src="./assets/images/Alpine Lake Wanderer’s Vista.png" class="d-block w-100" alt="Nature">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption home-carousel__caption">
                 <h5>Walk in Nature</h5>
                 <p>Discover nature with your loved ones.</p>
                 <button class="btn btn-primary">View Packages</button>
@@ -74,7 +75,7 @@
             <div class="carousel-item">
               <img src="./assets/images/ChatGPT Image Oct 6, 2026, 04_06_26 PM.png" class="d-block w-100"
                 alt="City Pools">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption home-carousel__caption">
                 <h5>Enjoy City Pools in Luxury Hotels</h5>
                 <p>Book affordable city travel plans with us.</p>
                 <button class="btn btn-warning">Book Trip</button>
@@ -99,28 +100,28 @@
     <div class="row">
       <div class="col-md-12">
         <!-- Services Start -->
-        <h2 class="text-center py-5">Why choose ChaloChale?</h2>
+        <h2 class="home-section__title text-center">Why choose ChaloChale?</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <div class="card shadow-sm">
+            <div class="card home-service-card h-100">
               <div class="card-body text-center">
-                <h5 class="fw-bold">Easy Booking</h5>
+                <h3 class="fw-bold">Easy Booking</h3>
                 <p>Book travel packages with our simple booking system.</p>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
+            <div class="card home-service-card h-100">
               <div class="card-body text-center">
-                <h5 class="fw-bold">Best Hotels</h5>
+                <h3 class="fw-bold">Best Hotels</h3>
                 <p>We provide the best hotel stays at affordable prices.</p>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
+            <div class="card home-service-card h-100">
               <div class="card-body text-center">
-                <h5 class="fw-bold">24/7 Support</h5>
+                <h3 class="fw-bold">24/7 Support</h3>
                 <p>Our travel support team is always there for assistance.</p>
               </div>
             </div>
@@ -130,67 +131,76 @@
       </div>
 
       <!-- Popular Destination Cards -->
-      <h2 class="text-center py-5">Popular Destinations</h2>
-      <div class="card-group">
-        <div class="card">
+      <h2 class="home-section__title text-center">Popular Destinations</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 home-card-grid">
+        <div class="col">
+          <article class="card home-destination-card h-100">
           <img src="./assets/images/delhi.png" class="card-img-top" alt="Malvika Nagar">
-          <div class="card-body">
-            <h5 class="card-title">Malvika Nagar</h5>
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title">Malvika Nagar</h3>
             <p class="card-text">Best place for shopping in Malvika Nagar, Delhi.</p>
-            <button class="btn btn-primary">Explore More</button>
+            <a class="btn btn-primary mt-auto" href="destination.html">Explore More</a>
           </div>
+          </article>
         </div>
-        <div class="card">
+        <div class="col">
+          <article class="card home-destination-card h-100">
           <img src="./assets/images/marine drive.png" class="card-img-top" alt="Marine Drive">
-          <div class="card-body">
-            <h5 class="card-title">Marine Drive</h5>
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title">Marine Drive</h3>
             <p class="card-text">One of the most famous places in Mumbai, especially for couples.</p>
-            <button class="btn btn-primary">Explore More</button>
+            <a class="btn btn-primary mt-auto" href="destination.html">Explore More</a>
           </div>
+          </article>
         </div>
-        <div class="card">
+        <div class="col">
+          <article class="card home-destination-card h-100">
           <img src="./assets/images/Raigad fort.png" class="card-img-top" alt="Raigad Fort">
-          <div class="card-body">
-            <h5 class="card-title">Raigad Fort</h5>
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title">Raigad Fort</h3>
             <p class="card-text">The capital of Swarajya. Raigad is one of the best tourist places.</p>
-            <button class="btn btn-primary">Explore More</button>
+            <a class="btn btn-primary mt-auto" href="destination.html">Explore More</a>
           </div>
+          </article>
         </div>
       </div>
       <!-- Popular Destination Ends -->
 
       <!-- featured packages start -->
-      <h2 class="text-center py-5">Featured Packages</h2>
-      <div class="card-group">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-left">Goa Beach Packages</h5>
-            <p class="card-text text-left">
-            <p><b>Duration</b> 5 days/4 nights</p>
-            </p>
-            <h4 class="text-success"> ₹12,499</h4>
-            <button class="btn btn-primary">Book Now</button>
-          </div>
+      <h2 class="home-section__title text-center">Featured Packages</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 home-card-grid">
+        <div class="col">
+          <article class="card home-package-card h-100">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Goa Beach Packages</h3>
+              <p class="card-text">Enjoy a refreshing beach getaway with time to relax by the sea.</p>
+              <p class="home-package-card__duration"><strong>Duration</strong> 5 days / 4 nights</p>
+              <p class="home-package-card__price">₹12,499</p>
+              <a class="btn btn-primary mt-auto" href="Booking.html">Book Now</a>
+            </div>
+          </article>
         </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-left">Shrinagar Kashmir package</h5>
-            <p class="card-text text-left">
-            <p><b>Duration</b> 10 days/9 nights</p>
-            </p>
-            <h4 class="text-success"> ₹22,499</h4>
-            <button class="btn btn-primary">Book Now</button>
-          </div>
+        <div class="col">
+          <article class="card home-package-card h-100">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Srinagar Kashmir Package</h3>
+              <p class="card-text">Take in peaceful mountain scenery and the beauty of Kashmir.</p>
+              <p class="home-package-card__duration"><strong>Duration</strong> 10 days / 9 nights</p>
+              <p class="home-package-card__price">₹22,499</p>
+              <a class="btn btn-primary mt-auto" href="Booking.html">Book Now</a>
+            </div>
+          </article>
         </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-left">Kedarnath Temple package</h5>
-            <p class="card-text text-left">
-            <p><b>Duration</b> 15 days/16 nights</p>
-            </p>
-            <h4 class="text-success"> ₹17,499</h4>
-            <button class="btn btn-primary">Book Now</button>
-          </div>
+        <div class="col">
+          <article class="card home-package-card h-100">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Kedarnath Temple Package</h3>
+              <p class="card-text">Make a meaningful journey through the majestic Himalayas.</p>
+              <p class="home-package-card__duration"><strong>Duration</strong> 15 days / 16 nights</p>
+              <p class="home-package-card__price">₹17,499</p>
+              <a class="btn btn-primary mt-auto" href="Booking.html">Book Now</a>
+            </div>
+          </article>
         </div>
       </div>
       <!-- featured packages ends -->
@@ -300,8 +310,6 @@
         </div>
       </div>
     </div>
-    ```
-
     <!-- modal for book your trip ends -->
 
 
