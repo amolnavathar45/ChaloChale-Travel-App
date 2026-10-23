@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalochale - Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container home-page">
+        <div class="row">
+            <div class="col-md-12">
+
+                <!-- Navbar Start -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <a class="navbar-brand text-primary fw-bold" href="#">ChaloChale</a>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item"><a class="nav-link active text-white" href="#">Home</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">Destinations</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">Packages</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">Booking</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+                            </ul>
+                            <div class="d-flex gap-2">
+                                <a class="btn btn-warning" href="signup.html">SignUP</a>
+                                <a class="btn btn-warning" href="signin.html">SignIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Navbar Ends -->
+
+            </div>
+        </div>
+
+        <section class="col-12 col-md-6 mx-auto my-5">
+            <h3 class="text-center">Create Account</h3>
+            <form class="p-4 shadow rounded bg-white">
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" autocomplete="name"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" autocomplete="email"
+                        aria-describedby="emailHelp" required>
+                    <div id="emailHelp" class="form-text">We’ll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password"
+                        autocomplete="new-password" required>
+                </div>
+                <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
+                        autocomplete="new-password" required>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Sign Up</button>
+            </form>
+
+            <p class="text-center pt-3">
+                Already have an account? <a href="signin.html">Sign In</a>.
+            </p>
+        </section>
+
+
+
+
+
+
+        <footer class="bg-dark text-white text-center py-3 mt-5">
+            <p class="mb-0">© 2026 ChaloChale Travel App || Designed with Bootstrap.</p>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
